@@ -1,0 +1,62 @@
+D:\C Drive\src\BKHandy\Module\BKHandy\BKHandy.exe
+D:\C Drive\src\BKHandy\Module\BKHandy\BKHandy.pdb
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\ResolveAssemblyReference.cache
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.InputLot.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.ErrorScreen.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.Setting.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.History.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.InputLocation2.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.InputQty.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.InputItem.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.InputLocation.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.InputUser.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.MainForm.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.Properties.Resources.resources
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.csproj.GenerateResource.Cache
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.exe
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.pdb
+D:\C Drive\src\BKHandy\Module\Program Files\BKHandy\BKHandy.exe
+D:\C Drive\src\BKHandy\Module\Program Files\BKHandy\BKHandy.pdb
+D:\C Drive\src\BKHandy\BKHandy\obj\Debug\BKHandy.InputQR.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\Module\Program Files\BKHandy\BKHandy.exe
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\Module\Program Files\BKHandy\BKHandy.pdb
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.InputQR.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.InputLot.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.ErrorScreen.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.Setting.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.History.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.InputLocation2.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.InputQty.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.InputItem.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.InputLocation.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.InputUser.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.MainForm.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.Properties.Resources.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.csproj.GenerateResource.Cache
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.exe
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy_BK\BKHandy\obj\Debug\BKHandy.pdb
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\Module\Program Files\BKHandy\BKHandy.exe
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\Module\Program Files\BKHandy\BKHandy.pdb
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.InputQR.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.InputLot.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.ErrorScreen.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.PaintMaterial1.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.Paintmaterial2.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.Paintmaterial3.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.PartTest2.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.PartTest3.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.Setting.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.History.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.InputLocation2.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.InputQty.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.InputItem.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.InputLocation.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.PartTest1.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.MainForm.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.Properties.Resources.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.TestPanel1.resources
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.csproj.GenerateResource.Cache
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.exe
+D:\Project\TMAP\BKeeper\Source\Handy\BKHandy1\BKHandy\obj\Debug\BKHandy.pdb

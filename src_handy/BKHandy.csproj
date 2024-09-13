@@ -1,0 +1,274 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F15C67FC-C5C9-4FE8-89A4-6EB24B53CE46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BKHandy</RootNamespace>
+    <AssemblyName>BKHandy</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>BKHandy</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>images.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Module\Program Files\BKHandy\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="btCommLibNet, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btCommLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="btFileLibNet, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btFileLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="btLibDefNet, Version=1.5.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btLibDefNet.dll</HintPath>
+    </Reference>
+    <Reference Include="btScanLibNet, Version=1.5.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btScanLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="btSysLibNet, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Windows CE Tools\SDKs\BT-W SDK-HT\Lib\ARMv4I\btSysLibNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windowsce.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="com\ComFunction.cs" />
+    <Compile Include="InputQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputQR.Designer.cs">
+      <DependentUpon>InputQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputLot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputLot.Designer.cs">
+      <DependentUpon>InputLot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorScreen.Designer.cs">
+      <DependentUpon>ErrorScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaintMaterial1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaintMaterial1.Designer.cs">
+      <DependentUpon>PaintMaterial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paintmaterial2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paintmaterial2.Designer.cs">
+      <DependentUpon>Paintmaterial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paintmaterial3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paintmaterial3.Designer.cs">
+      <DependentUpon>Paintmaterial3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartTest2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartTest2.Designer.cs">
+      <DependentUpon>PartTest2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartTest3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartTest3.Designer.cs">
+      <DependentUpon>PartTest3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputLocation2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputLocation2.Designer.cs">
+      <DependentUpon>InputLocation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputQty.Designer.cs">
+      <DependentUpon>InputQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputItem.Designer.cs">
+      <DependentUpon>InputItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputLocation.Designer.cs">
+      <DependentUpon>InputLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartTest1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartTest1.Designer.cs">
+      <DependentUpon>PartTest1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InputQR.resx">
+      <DependentUpon>InputQR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputLot.resx">
+      <DependentUpon>InputLot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorScreen.resx">
+      <DependentUpon>ErrorScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaintMaterial1.resx">
+      <DependentUpon>PaintMaterial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paintmaterial2.resx">
+      <DependentUpon>Paintmaterial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paintmaterial3.resx">
+      <DependentUpon>Paintmaterial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartTest2.resx">
+      <DependentUpon>PartTest2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartTest3.resx">
+      <DependentUpon>PartTest3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputLocation2.resx">
+      <DependentUpon>InputLocation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputQty.resx">
+      <DependentUpon>InputQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputItem.resx">
+      <DependentUpon>InputItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputLocation.resx">
+      <DependentUpon>InputLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartTest1.resx">
+      <DependentUpon>PartTest1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestPanel1.resx">
+      <DependentUpon>TestPanel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="resolution.cs" />
+    <Compile Include="TestPanel1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestPanel1.Designer.cs">
+      <DependentUpon>TestPanel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestPanel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestPanel2.Designer.cs">
+      <DependentUpon>TestPanel2.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
