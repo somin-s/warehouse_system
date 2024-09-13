@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9943460-ED7D-4E7A-A68C-FD2EFBF46073}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrightKeeper</RootNamespace>
+    <AssemblyName>BrightKeeper</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BrightKeeper.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetBarcode">
+      <HintPath>C:\dll\DotNetBarcode.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelCreator.2, Version=5.0.804.5912, Culture=neutral, PublicKeyToken=ced4a81bec0a43ef, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\XlsCrt5\Bin2005\ExcelCreator.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.XlsCrt.2, Version=5.0.804.5912, Culture=neutral, PublicKeyToken=c7202a96d9a84e8f, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\XlsCrt5\Bin2005\ExcelCreator.XlsCrt.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelCreator.XlsPDF.2, Version=5.0.804.5912, Culture=neutral, PublicKeyToken=e4c513f313a6890d, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\XlsCrt5\Bin2005\ExcelCreator.XlsPDF.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ProManApp">
+      <HintPath>..\ProManApp\bin\Debug\ProManApp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="com\ComFunction.cs" />
+    <Compile Include="Manual_Move2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual_Move2.Designer.cs">
+      <DependentUpon>Manual_Move2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manual_Issue2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual_Issue2.Designer.cs">
+      <DependentUpon>Manual_Issue2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manual_Receive2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual_Receive2.Designer.cs">
+      <DependentUpon>Manual_Receive2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Item_Label.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Item_Label.Designer.cs">
+      <DependentUpon>Master_Item_Label.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Currency.Designer.cs">
+      <DependentUpon>Master_Currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryHistory.Designer.cs">
+      <DependentUpon>InventoryHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Unit.Designer.cs">
+      <DependentUpon>Master_Unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manual_Issue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual_Issue.Designer.cs">
+      <DependentUpon>Manual_Issue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manual_Move.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual_Move.Designer.cs">
+      <DependentUpon>Manual_Move.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemMain.Designer.cs">
+      <DependentUpon>SystemMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manual_Receive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual_Receive.Designer.cs">
+      <DependentUpon>Manual_Receive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Item.Designer.cs">
+      <DependentUpon>Master_Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Vendor.Designer.cs">
+      <DependentUpon>Master_Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Customer.Designer.cs">
+      <DependentUpon>Master_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Location.Designer.cs">
+      <DependentUpon>Master_Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_User.Designer.cs">
+      <DependentUpon>Master_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMain.Designer.cs">
+      <DependentUpon>MasterMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manual_Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual_Input.Designer.cs">
+      <DependentUpon>Manual_Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryStock.Designer.cs">
+      <DependentUpon>InventoryStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataLog.Designer.cs">
+      <DependentUpon>DataLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataView.Designer.cs">
+      <DependentUpon>DataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefaultScreen.Designer.cs">
+      <DependentUpon>DefaultScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Manual_Move2.resx">
+      <DependentUpon>Manual_Move2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual_Issue2.resx">
+      <DependentUpon>Manual_Issue2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual_Receive2.resx">
+      <DependentUpon>Manual_Receive2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Item_Label.resx">
+      <DependentUpon>Master_Item_Label.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Currency.resx">
+      <DependentUpon>Master_Currency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryHistory.resx">
+      <DependentUpon>InventoryHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Unit.resx">
+      <DependentUpon>Master_Unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual_Issue.resx">
+      <DependentUpon>Manual_Issue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual_Move.resx">
+      <DependentUpon>Manual_Move.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemMain.resx">
+      <DependentUpon>SystemMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual_Receive.resx">
+      <DependentUpon>Manual_Receive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Item.resx">
+      <DependentUpon>Master_Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Vendor.resx">
+      <DependentUpon>Master_Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Customer.resx">
+      <DependentUpon>Master_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Location.resx">
+      <DependentUpon>Master_Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_User.resx">
+      <DependentUpon>Master_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMain.resx">
+      <DependentUpon>MasterMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual_Input.resx">
+      <DependentUpon>Manual_Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryStock.resx">
+      <DependentUpon>InventoryStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataLog.resx">
+      <DependentUpon>DataLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataView.resx">
+      <DependentUpon>DataView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefaultScreen.resx">
+      <DependentUpon>DefaultScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BrightKeeper.ico" />
+    <None Include="Resources\barcodesample.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\sato.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
